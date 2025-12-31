@@ -14,6 +14,9 @@
 //     [v1.3] Wei Gong open-src@qq.com   2025-12-12 18:04:07
 //         * added Registar::studentSchedule()
 //         * added the implementation of Student::schedule
+//     [v0.1.4]     2025-12-18 08:58:46
+//         * add some notes
+
 
 export module registrar;
 export import :student;
@@ -42,7 +45,7 @@ private:
 
 // ----- The implementaion of class Registrar -----
 Registrar &Registrar::singleton(){
-    static Registrar instance;
+    static Registrar instance;//static return the only instance,void to geting various system
     return instance;
 }
 
